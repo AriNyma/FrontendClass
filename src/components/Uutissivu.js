@@ -3,7 +3,7 @@ import Luetuimmat from "./Luetuimmat";
 function Uutissivu(props) {
     return(
         <>
-            <h1>Uutissivu</h1>
+            <h>Uutissivu</h>
             <Luetuimmat luetuimmatUutiset={props.uutiset}/>
         </>
     )

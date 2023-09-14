@@ -4,12 +4,8 @@ function Luetuimmat(props){
    
     return(
         <> 
-            <hr/>
-                <Vinkki tiedot = {props.luetuimmatUutiset[0]}/>
-                <Vinkki tiedot = {props.luetuimmatUutiset[1]}/>
-                <Vinkki tiedot = {props.luetuimmatUutiset[2]}/>
-                <Vinkki tiedot = {props.luetuimmatUutiset[3]}/>
-                <Vinkki tiedot = {props.luetuimmatUutiset[4]}/>
+            <h1>Luetuimmat</h1>
+            <hr/>{props.luetuimmatUutiset.map(x => <Vinkki tiedot={x}/>)}
         </>
     );
 }
